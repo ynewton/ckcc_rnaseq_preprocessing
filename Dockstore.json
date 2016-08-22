@@ -1,0 +1,10 @@
+{
+  "output": {
+    "path": "/tmp/output.tsv",
+    "class": "File"
+  },
+  "input": {
+    "path": "https://raw.githubusercontent.com/ucscHexmap/hexagram/dev/.docker/variance_filter/mRNA_test.tab",
+    "class": "File"
+  }
+}
