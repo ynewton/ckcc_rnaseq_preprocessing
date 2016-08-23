@@ -36,11 +36,11 @@ input.close()
 
 print >> sys.stderr, "Outputting and aggregating duplicates..."
 output = open(out_file_name, 'w')
-print >> output, "ID\t"+header_line
+print >> output, header_line
 for k in feature_count_dict.keys():
 	k_count = feature_count_dict[k]
 	if k_count == 1:	#not duplicated
-		output_vals = [str(x) for x in feature_val_dict[k]]
+		output_vals = [str(x) for x in feature_val_dict[k][0]]
 	
 	else:
 		k_vals_t = numpy.transpose(feature_val_dict[k])
